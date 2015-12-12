@@ -1,0 +1,77 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+\title{Total Swag Factor of Harold Pimentel}%replace X with the appropriate number
+\author{Daniel Li\\ %replace with your name
+Foundations of Harold's Swag} %if necessary, replace with your course title
+ 
+\maketitle
+
+\begin{introduction}
+Inspiration taken from some upper division course I took on accident first semester past drop deadline without knowing what a PDE or partial derivative is.
+\end{introduction}
+\begin{theorem}{1} %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
+Harold's swag (Total Swag Factor) can be modeled with the following for any given instance:\\
+$$\frac{\partial k}{\partial t} + \overline{u}_j \frac{\partial k}{\partial x_j} = - \frac{1}{\rho_0} \frac{\partial \overline{u'_ip'}}{\partial x_i} - \frac{1}{2} \frac{\partial \overline{u'_ju'_ju'_i}}{\partial x_i} + v \frac{\partial^2k}{\partial x^2_j} - \overline{u'_iu'j}\frac{\overline{u_i}}{\partial x_j} - v \overline{\frac{\partial u'_i}{\partial x_j}\frac{\partial u'_i}{\partial x_j}} - \frac{g}{\rho_0}\overline{p'u'_i}\delta_{i3} + \epsilon$$
+\end{theorem}\\
+\\
+
+ 
+ \noindent\textbf{Definitions.}
+Here, the previous equation's terms will be defined.
+%Note 1: The * tells LaTeX not to number the lines.  If you remove the *, be sure to remove it below, too.
+%Note 2: Inside the align environment, you do not want to use $-signs.  The reason for this is that this is already a math environment. This is why we have to include \text{} around any text inside the align environment.
+\begin{align*}
+k & = \text{Total Swag Factor (TSF)'s mean-flow} \\
+\frac{\partial k}{\partial t} & = \text{Local material derivative of TSF with respect to time}\\
+\overline{u}_j \frac{\partial k}{\partial x_j}
+& = \text{Advection of TSF with influence onto others} \\
+- \frac{1}{\rho_0} \frac{\partial \overline{u'_ip'}}{\partial x_i} & = 
+\text{Diffusion of Knowledge}\\
+- \frac{1}{2} \frac{\partial \overline{u'_ju'_ju'_i}}{\partial x_i} & = 
+\text{Turbulent transport of swag}\\
+ v \frac{\partial^2k}{\partial x^2_j} & = 
+ \text{2nd moment of molecular swag}\\
+- \overline{u'_iu'j}\frac{\overline{u_i}}{\partial x_j} & = \text{Swag absorbed due to gravity}\\
+- v \overline{\frac{\partial u'_i}{\partial x_j}\frac{\partial u'_i}{\partial x_j}} & = 
+\text{Swag loss due to biochemical processes of maintenance}\\
+- \frac{g}{\rho_0}\overline{p'u'_i}\delta_{i3} & = 
+\text{Swag flux}\\
+\epsilon & = \text{Marginal error}
+\end{align*}
+ 
+
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}
